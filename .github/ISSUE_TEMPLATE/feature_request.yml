@@ -1,0 +1,38 @@
+name: Feature request
+description: Suggest an improvement to an ArchiGen Connect workflow
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please describe a user-facing workflow. Do not include private project files, credentials, tokens, or confidential company information.
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Requested workflow
+      description: What should ArchiGen Connect help you do?
+    validations:
+      required: true
+  - type: input
+    id: application
+    attributes:
+      label: AEC application
+      placeholder: Rhino, Grasshopper, Revit, or other
+    validations:
+      required: true
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use case
+      description: Tell us when and why you would use this workflow.
+    validations:
+      required: true
+  - type: textarea
+    id: benefit
+    attributes:
+      label: Expected benefit
+      description: What would become easier, faster, or more reliable?
+    validations:
+      required: true

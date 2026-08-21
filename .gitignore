@@ -1,0 +1,5 @@
+*.exe
+*.zip
+*.db
+.env
+.env.*
