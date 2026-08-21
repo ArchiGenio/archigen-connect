@@ -47,4 +47,4 @@ Please do not include passwords, tokens, API keys, confidential project files, o
 - [Requirements](REQUIREMENTS.md)
 - [Troubleshooting](TROUBLESHOOTING.md)
 - [Changelog](CHANGELOG.md)
-- [Beta feedback thread](https://github.com/ArchiGenio/archigen-connect/issues)
+- [Beta feedback thread](https://github.com/ArchiGenio/archigen-connect/issues/1)
