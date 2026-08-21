@@ -6,7 +6,7 @@ ArchiGen Connect connects compatible AI assistants with AEC design applications,
 
 **Beta**
 
-**Current version: 0.1.0-beta.1**
+**Current version: 0.1.0-beta.2**
 
 ```text
 AI Assistant -> ArchiGen Connect -> Rhino / Grasshopper / AEC workflows
@@ -24,14 +24,18 @@ AI Assistant -> ArchiGen Connect -> Rhino / Grasshopper / AEC workflows
 
 ## Download ArchiGen Connect
 
-Download the first public Beta from the official GitHub Release:
+Download the controlled public Beta from the official GitHub Release:
 
-**[Download ArchiGen Connect 0.1.0-beta.1](https://github.com/ArchiGenio/archigen-connect/releases/tag/v0.1.0-beta.1)**
+**[Download ArchiGen Connect 0.1.0-beta.2](https://github.com/ArchiGenio/archigen-connect/releases/tag/v0.1.0-beta.2)**
 
-- **Version:** `0.1.0-beta.1`
-- **Platform:** Windows
-- **Installer:** `ArchiGenConnectSetup-0.1.0-beta.1.exe`
-- **SHA-256:** `36DC7762F432933561668DF7DC8D92F4A2F8A9CFD5FEC668DB7274924CC0D7BA`
+- **Version:** `0.1.0-beta.2`
+- **Platform:** Windows 10/11 x64
+- **Installer:** `ArchiGenConnectSetup-0.1.0-beta.2.exe`
+- **SHA-256:** `285538FDBB120E5FBB7E18BCEAB3D8C7E29BE5C652948A3DCEF3748349123D8F`
+
+### Unsigned Beta notice
+
+ArchiGen Connect `0.1.0-beta.2` is an early Beta and is not yet digitally signed with a production publisher certificate. Windows Defender SmartScreen may show **Windows protected your PC**. Download only from this repository, verify the filename and SHA-256, then select **More info** and **Run anyway** only after those checks. Never disable Microsoft Defender or SmartScreen globally.
 
 See [INSTALL.md](INSTALL.md) before starting setup. For supported environments, see [REQUIREMENTS.md](REQUIREMENTS.md).
 
