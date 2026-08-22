@@ -3,7 +3,7 @@
 ## Required
 
 - Windows 10 or Windows 11, 64-bit.
-- Rhino 8.34.
+- Rhino 8.34 or later.
 - Grasshopper included with Rhino 8. No separate Grasshopper installation is required.
 
 ## Required for the Copilot workflow
@@ -17,7 +17,7 @@
 
 ## Optional
 
-- Revit 2025.
+- Revit.
 - Rhino.Inside.Revit.
 
 The installer displays the detected state of these prerequisites before installation. Missing optional software does not prevent installation. Availability of a workflow can depend on the installed host applications and their local configuration.

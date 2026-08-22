@@ -1,12 +1,16 @@
 # Troubleshooting
 
+## Windows SmartScreen
+
+This Beta may display SmartScreen because the installer is not yet Authenticode-signed. If you intentionally downloaded it from the official ArchiGen GitHub release, choose **More info -> Run anyway**. Do not disable Defender.
+
 ## Rhino is not detected
 
-Close Rhino, restart ArchiGen Connect, and run the System Check / Preparation flow again. Confirm that Rhino 8 is installed and available to your Windows user.
+Use the installer **System Check** page and select **Recheck**. Confirm that Rhino 8.34 or later is installed.
 
 ## Rhino MCP is not ready
 
-Use the repair option shown by setup, then restart Rhino. Keep Rhino closed while repair is running. If the issue continues, report the detected version and the steps that led to the problem.
+Use **Repair** from the ArchiGen Connect installer, then restart Rhino. Keep Rhino closed while repair is running. Do not manually edit package files.
 
 ## Visual Studio Code is not detected
 
@@ -18,7 +22,7 @@ Confirm that Visual Studio Code is installed and that the Copilot workflow is av
 
 ## Grasshopper is not connected
 
-Open Rhino 8 and Grasshopper after setup completes. Confirm that the compatible Rhino MCP components are installed, then restart Rhino and retry the workflow.
+Retry the Rhino connection from ArchiGen Connect. Open Rhino 8 and Grasshopper after setup completes.
 
 ## Restarting ArchiGen Connect
 

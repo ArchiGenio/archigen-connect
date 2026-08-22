@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.1.0-beta.3
+
+- Added a professional Windows installer with Install / Repair / Uninstall workflow.
+- Added prerequisite System Check and Rhino MCP provisioning and repair.
+- Added automatic ArchiGen Rhino Bridge installation.
+- Added single-session Rhino and Grasshopper startup.
+- Added Project -> Rhino -> Copilot onboarding and improved loading and connection states.
+- Added connected Project, Rhino, and Copilot states.
+- Added production Parametric Intelligence preflight integration.
+
+This Beta release exposes no private Skills logic, prompts, or internal methodology.
+
 ## 0.1.0-beta.2
 
 - Added a professional graphical Windows x64 installer with Program Files installation, Start Menu shortcut, optional desktop shortcut, Installed Apps registration, reinstall support, and normal uninstall.
