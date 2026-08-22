@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0-beta.4
+
+- Refined the desktop WebView experience.
+- Added Account, Sign In and Sign Up surfaces with website access.
+- Restored the Project, Rhino and Copilot bottom action bar.
+- Fixed document styling so the installed page does not expose raw CSS text.
+- Preserved the existing Rhino, Grasshopper and Copilot workflow behavior.
+
 ## 0.1.0-beta.3
 
 - New Windows installer.

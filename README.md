@@ -11,7 +11,7 @@
 <p align="center">ArchiGen Connect brings AI-assisted design into Rhino, Grasshopper and your project workflow.</p>
 
 <p align="center">
-	<a href="https://github.com/ArchiGenio/archigen-connect/releases/tag/v0.1.0-beta.3"><strong>Download ArchiGen Connect Beta</strong></a>
+	<a href="https://github.com/ArchiGenio/archigen-connect/releases/tag/v0.1.0-beta.4"><strong>Download ArchiGen Connect Beta</strong></a>
 	&nbsp;&middot;&nbsp;
 	<a href="https://github.com/ArchiGenio/archigen-connect/issues/new/choose">Report Feedback</a>
 </p>
@@ -51,10 +51,10 @@ BIM workflows are being expanded during Beta.
 
 ## Download
 
-### ArchiGen Connect 0.1.0-beta.3
+### ArchiGen Connect 0.1.0-beta.4
 
 - **Platform:** Windows 10/11 x64
-- **[Download latest Beta](https://github.com/ArchiGenio/archigen-connect/releases/tag/v0.1.0-beta.3)**
+- **[Download latest Beta](https://github.com/ArchiGenio/archigen-connect/releases/tag/v0.1.0-beta.4)**
 
 During the Beta, Windows may display a security confirmation when launching the installer. Always download ArchiGen Connect from the official release page.
 
