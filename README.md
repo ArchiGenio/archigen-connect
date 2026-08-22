@@ -1,50 +1,65 @@
-# ArchiGen Connect
+<p align="center">
+	<img src="assets/archigen-logo.png" alt="ArchiGen" width="220">
+</p>
 
-## AI Agent for AEC
+<h1 align="center">ArchiGen Connect</h1>
 
-ArchiGen Connect connects AI-assisted design workflows with Rhino, Grasshopper and GitHub Copilot.
+<p align="center"><strong>AI Agent for AEC</strong></p>
 
-**Beta 3: 0.1.0-beta.3**
+<p align="center">Connect AI directly to your design workflow.</p>
 
-```text
-Project -> Rhino + Grasshopper -> Copilot
-```
+<p align="center">ArchiGen Connect brings AI-assisted design into Rhino, Grasshopper and your project workflow.</p>
 
-### Beta 3 capabilities
+<p align="center">
+	<a href="https://github.com/ArchiGenio/archigen-connect/releases/tag/v0.1.0-beta.3"><strong>Download ArchiGen Connect Beta</strong></a>
+	&nbsp;&middot;&nbsp;
+	<a href="https://github.com/ArchiGenio/archigen-connect/issues/new/choose">Report Feedback</a>
+</p>
 
-- AI-assisted Rhino and Grasshopper workflows
-- Project-aware onboarding
-- GitHub Copilot workflow support
-- Automatic environment checks and Rhino connection repair
-- Automatic ArchiGen Rhino Bridge installation
+## What you can do
 
-## Download ArchiGen Connect
+- Create parametric Grasshopper definitions with AI assistance.
+- Modify and evolve existing Grasshopper workflows.
+- Work with Rhino and Grasshopper directly from your AI workspace.
+- Keep your design workflow connected to the selected project.
+- Explore parametric design strategies before execution.
+- Prepare connected workflows for architecture, computational design and BIM.
 
-Download the controlled public Beta from the official GitHub Release:
+## How it works
 
-**[Download ArchiGen Connect 0.1.0-beta.3](https://github.com/ArchiGenio/archigen-connect/releases/tag/v0.1.0-beta.3)**
+### 1. Select your project
 
-- **Version:** `0.1.0-beta.3`
+Choose the folder you are working on.
+
+### 2. Connect Rhino
+
+ArchiGen Connect prepares Rhino and Grasshopper.
+
+### 3. Connect Copilot
+
+Open your project in GitHub Copilot.
+
+### 4. Start designing
+
+Describe what you want to create, modify or explore.
+
+## Built for AEC workflows
+
+`Rhino` &nbsp; `Grasshopper` &nbsp; `GitHub Copilot` &nbsp; `Parametric Design` &nbsp; `Computational Design` &nbsp; `BIM`
+
+BIM workflows are being expanded during Beta.
+
+## Download
+
+### ArchiGen Connect 0.1.0-beta.3
+
 - **Platform:** Windows 10/11 x64
-- **Installer:** `ArchiGenConnectSetup-0.1.0-beta.3.exe`
-- **SHA-256:** `9196CD4A4DFC982CFC19B2018D563BF8D74314FC149FA22B117427C88C547404`
+- **[Download latest Beta](https://github.com/ArchiGenio/archigen-connect/releases/tag/v0.1.0-beta.3)**
 
-### Unsigned Beta notice
-
-ArchiGen Connect `0.1.0-beta.3` is a Beta build and is not yet digitally signed with a production publisher certificate. Windows Defender SmartScreen may show **Windows protected your PC**. Download only from this repository, verify the filename and SHA-256, then select **More info** and **Run anyway** only after those checks. Never disable Microsoft Defender or SmartScreen globally.
-
-See [INSTALL.md](INSTALL.md) before starting setup. For supported environments, see [REQUIREMENTS.md](REQUIREMENTS.md).
+During the Beta, Windows may display a security confirmation when launching the installer. Always download ArchiGen Connect from the official release page.
 
 ## Support
 
-ArchiGen Connect is in Beta. Read [TROUBLESHOOTING.md](TROUBLESHOOTING.md) for common setup issues, then [open an issue](https://github.com/ArchiGenio/archigen-connect/issues/new/choose) if you need help.
+Start with [Installation](INSTALL.md), [Requirements](REQUIREMENTS.md) or [Troubleshooting](TROUBLESHOOTING.md). For help, [report feedback or open an issue](https://github.com/ArchiGenio/archigen-connect/issues/new/choose).
 
-Please do not include passwords, tokens, API keys, confidential project files, or private company information in an issue.
-
-## Documents
-
-- [Installation](INSTALL.md)
-- [Requirements](REQUIREMENTS.md)
-- [Troubleshooting](TROUBLESHOOTING.md)
-- [Changelog](CHANGELOG.md)
-- [Beta feedback thread](https://github.com/ArchiGenio/archigen-connect/issues/1)
+Please do not include passwords, tokens, API keys, confidential project files or private company information in an issue.

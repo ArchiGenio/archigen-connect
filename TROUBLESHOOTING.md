@@ -1,33 +1,25 @@
 # Troubleshooting
 
-## Windows SmartScreen
-
-This Beta may display SmartScreen because the installer is not yet Authenticode-signed. If you intentionally downloaded it from the official ArchiGen GitHub release, choose **More info -> Run anyway**. Do not disable Defender.
-
 ## Rhino is not detected
 
-Use the installer **System Check** page and select **Recheck**. Confirm that Rhino 8.34 or later is installed.
+Update or install Rhino, then return to ArchiGen Connect and click **Recheck**.
 
-## Rhino MCP is not ready
+## Rhino does not connect
 
-Use **Repair** from the ArchiGen Connect installer, then restart Rhino. Keep Rhino closed while repair is running. Do not manually edit package files.
+Run ArchiGen Connect setup and choose **Repair**.
 
-## Visual Studio Code is not detected
+## Grasshopper does not open
 
-Install Visual Studio Code from its official website, restart ArchiGen Connect, and run the system check again. Visual Studio Code is only needed for the Copilot-compatible workflow.
+Retry the Rhino connection from ArchiGen Connect.
 
-## Copilot does not open
+## Copilot does not connect
 
-Confirm that Visual Studio Code is installed and that the Copilot workflow is available to your account. Restart Visual Studio Code and ArchiGen Connect, then try again.
+Confirm that Visual Studio Code and GitHub Copilot are installed and that you are signed in.
 
-## Grasshopper is not connected
+## Windows security prompt
 
-Retry the Rhino connection from ArchiGen Connect. Open Rhino 8 and Grasshopper after setup completes.
+Confirm you downloaded the official Beta from this repository, then continue through the Windows confirmation dialog. If needed, choose **More info -> Run anyway**.
 
-## Restarting ArchiGen Connect
+## Reporting a problem
 
-Close ArchiGen Connect normally, leave Rhino and Revit closed, and launch ArchiGen Connect again. Re-run System Check / Preparation if requested.
-
-## Reporting a bug
-
-Search [GitHub Issues](https://github.com/ArchiGenio/archigen-connect/issues) first. If the issue is not already reported, use the Bug Report template. Do not upload passwords, tokens, API keys, confidential project files, or private company information.
+Search [GitHub Issues](https://github.com/ArchiGenio/archigen-connect/issues) first. If the issue is not already reported, [open a new issue](https://github.com/ArchiGenio/archigen-connect/issues/new/choose). Do not upload passwords, tokens, API keys, confidential project files or private company information.

@@ -1,25 +1,21 @@
-# ArchiGen Connect Requirements
+# Requirements
 
 ## Required
 
-- Windows 10 or Windows 11, 64-bit.
-- Rhino 8.34 or later.
-- Grasshopper included with Rhino 8. No separate Grasshopper installation is required.
+- Windows 10/11
+- Rhino 8.34+
+- Grasshopper
 
-## Required for the Copilot workflow
+## For AI workflow
 
-- Visual Studio Code.
-- GitHub Copilot with an authenticated, supported Copilot environment.
-
-## Connect-managed
-
-- Rhino MCP detection, setup, and repair are managed by ArchiGen Connect when Rhino is installed.
+- Visual Studio Code
+- GitHub Copilot
 
 ## Optional
 
-- Revit.
-- Rhino.Inside.Revit.
+- Revit
+- Rhino.Inside.Revit
 
-The installer displays the detected state of these prerequisites before installation. Missing optional software does not prevent installation. Availability of a workflow can depend on the installed host applications and their local configuration.
+The installer checks your environment before setup. Missing optional software does not prevent installation.
 
-Do not install components from unofficial sources. Use the official host-application installers and the links provided by those applications.
+Use official installers for the host applications.
