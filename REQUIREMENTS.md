@@ -1,4 +1,4 @@
-# Requirements for Beta.15
+# Requirements for Beta.18
 
 ## Supported platform
 
@@ -14,4 +14,4 @@
 - ChatGPT
 - GitHub Copilot / local workflow
 
-The installer checks the local environment and provides repair support. Beta.15 does not claim production support for Revit, AutoCAD, Blender, Claude, Gemini, or local/Ollama AI; those remain roadmap items.
+The installer checks the local environment and provides repair support. Beta.18 does not claim production support for Revit, AutoCAD, Blender, Claude, Gemini, or local/Ollama AI; those remain roadmap items.

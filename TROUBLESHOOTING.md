@@ -1,4 +1,4 @@
-# Troubleshooting Beta.15
+# Troubleshooting Beta.18
 
 ## Rhino is not detected
 
@@ -6,7 +6,7 @@ Confirm Rhino 8 is installed and open, then return to ArchiGen Connect and retry
 
 ## Rhino or Grasshopper does not connect
 
-Close and reopen Rhino, then use the Beta.15 installer and choose **Repair**. Reopen Grasshopper after the repair completes.
+Close and reopen Rhino, then use the Beta.18 installer and choose **Repair**. Reopen Grasshopper after the repair completes.
 
 ## AI client does not connect
 
@@ -18,11 +18,11 @@ Sign out and sign in again, then restart ArchiGen Connect. If the problem persis
 
 ## Windows security notice
 
-Confirm that the installer came from the official [Beta.15 GitHub Release](https://github.com/ArchiGenio/archigen-connect/releases/tag/v0.1.0-beta.15). Windows may require **More info → Run anyway** for this public Beta installer.
+Confirm that the installer came from the official [Beta.18 GitHub Release](https://github.com/ArchiGenio/archigen-connect/releases/tag/v0.1.0-beta.18). Windows may require **More info → Run anyway** for this public Beta installer.
 
 ## Repair workflow
 
-Run `ArchiGenConnectSetup-0.1.0-beta.15.exe`, select **Repair**, complete setup, and restart the connected applications.
+Run `ArchiGenConnectSetup-0.1.0-beta.18.exe`, select **Repair**, complete setup, and restart the connected applications.
 
 ## Reporting a problem
 

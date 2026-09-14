@@ -7,7 +7,7 @@
 <p align="center"><code>MCP-powered</code> · <code>Model-neutral</code> · <code>AEC-focused</code></p>
 
 <p align="center">
-	<a href="https://github.com/ArchiGenio/archigen-connect/releases/tag/v0.1.0-beta.15"><strong>Download Latest Beta</strong></a>
+	<a href="https://github.com/ArchiGenio/archigen-connect/releases/tag/v0.1.0-beta.18"><strong>Download Latest Beta</strong></a>
 	· <a href="https://github.com/ArchiGenio/archigen-connect/issues/new/choose">Report Feedback</a>
 </p>
 
@@ -112,19 +112,18 @@ See [INSTALL.md](INSTALL.md) for the complete setup flow and [REQUIREMENTS.md](R
 
 ## Connect with ChatGPT
 
-ChatGPT connects to ArchiGen Connect through MCP using the Beta.15 Developer Mode app flow. Follow the complete [ChatGPT MCP setup guide](CHATGPT_SETUP.md) for the bridge command, secure HTTPS tunnel, tool scan, status test, and first Grasshopper execution test.
+ChatGPT connects to ArchiGen Connect through MCP using the Beta.18 Developer Mode app flow. Follow the complete [ChatGPT MCP setup guide](CHATGPT_SETUP.md) for the bridge command, secure HTTPS tunnel, tool scan, status test, and first Grasshopper execution test.
 
-## Download Beta.15
+## Download ArchiGen Connect Beta.18
 
 Download the latest **ArchiGen Connect Public Beta** for Windows.
 
-[**Download ArchiGen Connect 0.1.0-beta.15**](https://github.com/ArchiGenio/archigen-connect/releases/tag/v0.1.0-beta.15)
+[**Download ArchiGen Connect 0.1.0-beta.18**](https://github.com/ArchiGenio/archigen-connect/releases/tag/v0.1.0-beta.18)
 
 The installer is distributed through the official GitHub Releases page.
 
 For installation steps, see [INSTALL.md](INSTALL.md).
 
-SHA-256: `6C910296DEAC44E4D16A2ABF517C4DDD968537C18E9389F17DAAD631CC2734A6`
 
 ## Roadmap
 

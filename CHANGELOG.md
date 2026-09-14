@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0-beta.18
+
+- Fixed stale Windows shortcuts that could launch an older ArchiGen Connect build after upgrade.
+- Added the installed product version to the desktop UI and installer.
+- Improved Rhino MCP connector startup and readiness detection.
+- Fixed an installer finish-page error.
+- Preserved existing ChatGPT, GitHub Copilot, Rhino, and Grasshopper workflows.
+
 ## 0.1.0-beta.15
 
 - Public Beta baseline for ChatGPT and GitHub Copilot / local workflows.
