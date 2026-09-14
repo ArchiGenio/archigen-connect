@@ -116,7 +116,13 @@ ChatGPT connects to ArchiGen Connect through MCP using the Beta.15 Developer Mod
 
 ## Download Beta.15
 
-[Download ArchiGen Connect 0.1.0-beta.15](https://github.com/ArchiGenio/archigen-connect/releases/tag/v0.1.0-beta.15) from GitHub Releases. The installer is published as a release asset rather than stored in this repository.
+Download the latest **ArchiGen Connect Public Beta** for Windows.
+
+[**Download ArchiGen Connect 0.1.0-beta.15**](https://github.com/ArchiGenio/archigen-connect/releases/tag/v0.1.0-beta.15)
+
+The installer is distributed through the official GitHub Releases page.
+
+For installation steps, see [INSTALL.md](INSTALL.md).
 
 SHA-256: `6C910296DEAC44E4D16A2ABF517C4DDD968537C18E9389F17DAAD631CC2734A6`
 
