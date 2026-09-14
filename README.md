@@ -110,6 +110,10 @@ Download → Install → Sign In → Select Project → Connect → Design
 
 See [INSTALL.md](INSTALL.md) for the complete setup flow and [REQUIREMENTS.md](REQUIREMENTS.md) for supported prerequisites.
 
+## Connect with ChatGPT
+
+ChatGPT connects to ArchiGen Connect through MCP using the Beta.15 Developer Mode app flow. Follow the complete [ChatGPT MCP setup guide](CHATGPT_SETUP.md) for the bridge command, secure HTTPS tunnel, tool scan, status test, and first Grasshopper execution test.
+
 ## Download Beta.15
 
 [Download ArchiGen Connect 0.1.0-beta.15](https://github.com/ArchiGenio/archigen-connect/releases/tag/v0.1.0-beta.15) from GitHub Releases. The installer is published as a release asset rather than stored in this repository.
