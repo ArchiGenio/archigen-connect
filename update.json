@@ -1,9 +1,9 @@
 {
   "beta": {
-    "latestVersion": "0.1.0-beta.4",
-    "downloadUrl": "https://github.com/ArchiGenio/archigen-connect/releases/download/v0.1.0-beta.4/ArchiGenConnectSetup-0.1.0-beta.4.exe",
-    "sha256": "34485AF9F4E2D3E61E7F0D94B3AA2FCAEEFFAA7FBBC6700DD7A28F664EEB7D10",
-    "releaseNotesUrl": "https://github.com/ArchiGenio/archigen-connect/releases/tag/v0.1.0-beta.4"
+    "latestVersion": "0.1.0-beta.15",
+    "downloadUrl": "https://github.com/ArchiGenio/archigen-connect/releases/download/v0.1.0-beta.15/ArchiGenConnectSetup-0.1.0-beta.15.exe",
+    "sha256": "6C910296DEAC44E4D16A2ABF517C4DDD968537C18E9389F17DAAD631CC2734A6",
+    "releaseNotesUrl": "https://github.com/ArchiGenio/archigen-connect/releases/tag/v0.1.0-beta.15"
   },
   "stable": {
     "latestVersion": "",

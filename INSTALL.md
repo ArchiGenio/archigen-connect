@@ -1,27 +1,23 @@
-# Install ArchiGen Connect
+# Install ArchiGen Connect Beta.15
 
 ### 1. Download
 
-Download the latest Beta from the [official ArchiGen Connect release](https://github.com/ArchiGenio/archigen-connect/releases/tag/v0.1.0-beta.3).
+Download [ArchiGen Connect 0.1.0-beta.15](https://github.com/ArchiGenio/archigen-connect/releases/tag/v0.1.0-beta.15) from the official GitHub Release.
 
-### 2. Run setup
+### 2. Install
 
-Launch the installer and follow the setup steps.
+Run `ArchiGenConnectSetup-0.1.0-beta.15.exe` and follow the installer. Windows may show a SmartScreen confirmation for the public Beta; verify that the installer came from the official release page, then choose **More info → Run anyway** when appropriate.
 
-### 3. System Check
+### 3. Sign in and select a project
 
-ArchiGen Connect checks your required design applications. If Rhino or Visual Studio Code is missing, use the provided download links.
+Launch ArchiGen Connect, sign in, and select the project folder you want to work with.
 
-### 4. Install
+### 4. Connect Rhino and Grasshopper
 
-Choose **Install** and complete setup.
+Open Rhino and Grasshopper, then connect them from ArchiGen Connect. Rhino and Grasshopper are the primary supported AEC workflow in Beta.15.
 
-### 5. Start
+### 5. Connect your AI and design
 
-Launch ArchiGen Connect and follow:
+Connect ChatGPT or GitHub Copilot / local workflow, then describe the workflow you want to create, modify, inspect, or verify.
 
-`Project -> Rhino -> Copilot`
-
-During the Beta, Windows may display a security confirmation when launching the installer. If Windows shows a protection prompt for the official Beta installer, review the file and choose **More info -> Run anyway**.
-
-For supported environments, see [Requirements](REQUIREMENTS.md). For help, see [Troubleshooting](TROUBLESHOOTING.md).
+For supported environments, see [REQUIREMENTS.md](REQUIREMENTS.md). For help, see [TROUBLESHOOTING.md](TROUBLESHOOTING.md).

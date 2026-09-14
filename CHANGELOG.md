@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0-beta.15
+
+- Public Beta baseline for ChatGPT and GitHub Copilot / local workflows.
+- Rhino and Grasshopper connection for structured AEC execution.
+- Create, modify, inspect, and verify workflows for parametric design.
+- Safer selective modification and bounded cleanup that preserves unrelated work.
+- Improved connection reliability and a public release experience for feedback.
+
 ## 0.1.0-beta.4
 
 - Refined the desktop WebView experience.

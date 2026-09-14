@@ -1,21 +1,17 @@
-# Requirements
+# Requirements for Beta.15
 
-## Required
+## Supported platform
 
-- Windows 10/11
-- Rhino 8.34+
-- Grasshopper
+- Windows 10/11 x64
 
-## For AI workflow
+## Supported AEC workflow
 
-- Visual Studio Code
-- GitHub Copilot
+- Rhino 8
+- Grasshopper (included with Rhino)
 
-## Optional
+## Supported AI clients and hosts
 
-- Revit
-- Rhino.Inside.Revit
+- ChatGPT
+- GitHub Copilot / local workflow
 
-The installer checks your environment before setup. Missing optional software does not prevent installation.
-
-Use official installers for the host applications.
+The installer checks the local environment and provides repair support. Beta.15 does not claim production support for Revit, AutoCAD, Blender, Claude, Gemini, or local/Ollama AI; those remain roadmap items.
