@@ -3,140 +3,87 @@
 <h1 align="center">ArchiGen Connect</h1>
 
 <p align="center"><strong>AI Agent Bridge for AEC Workflows</strong></p>
-<p align="center">Connect AI directly to Rhino, Grasshopper, and professional AEC workflows.</p>
-<p align="center"><code>MCP-powered</code> · <code>Model-neutral</code> · <code>AEC-focused</code></p>
+<p align="center"><strong>Any AI. One AEC Connection Layer.</strong></p>
+<p align="center">0.1.0-beta.20 | Free Public Beta | Windows 10/11 x64</p>
 
 <p align="center">
-	<a href="https://github.com/ArchiGenio/archigen-connect/releases/tag/v0.1.0-beta.18"><strong>Download Latest Beta</strong></a>
-	· <a href="https://github.com/ArchiGenio/archigen-connect/issues/new/choose">Report Feedback</a>
+  <a href="https://github.com/ArchiGenio/archigen-connect/releases/download/v0.1.0-beta.20/ArchiGenConnectSetup-0.1.0-beta.20.exe"><strong>Download Beta.20 for Windows</strong></a>
+  | <a href="https://github.com/ArchiGenio/archigen-connect/releases/tag/v0.1.0-beta.20">Release Notes</a>
+  | <a href="https://github.com/ArchiGenio/archigen-connect/issues/new/choose">Report Bug / Request Feature</a>
 </p>
 
-<p align="center"><strong>Free Public Beta</strong></p>
+<p align="center"><img src="assets/archigen-connect-hero.png" alt="Conceptual illustration of ArchiGen Connect linking AI with AEC workflows"></p>
 
-<p align="center"><img src="assets/archigen-connect-hero.png" alt="Conceptual view of ArchiGen Connect linking AI with AEC workflows"></p>
+ArchiGen Connect connects compatible AI assistants to architecture, engineering and computational-design workflows. It is a connection and execution layer, not another foundation model: create, modify, inspect and verify geometry in the design tools you use.
 
-ArchiGen Connect is the intelligent connection layer between AI assistants and professional architecture, engineering, computational-design, CAD, parametric-design, and BIM workflows. It is not another foundation model. It gives compatible AI systems structured tools, project context, AEC semantics, execution, modification, and verification.
+This is the public product, documentation and download repository. Product source is not published here. Installers are distributed as GitHub Release assets, not files in this repository.
 
-```text
-AI Intelligence
-			↓
-ArchiGen Connect
-			↓
-AEC Execution
-```
+## Supported in Beta.20
 
-## Supported now
-
-| AI clients and hosts | AEC software | Platform |
+| Platform | AEC workflow | AI clients |
 | --- | --- | --- |
-| ChatGPT · GitHub Copilot / local workflow | Rhino · Grasshopper | Windows 10/11 x64 |
+| Windows 10/11 x64 | Rhino 8 and Grasshopper | ChatGPT and GitHub Copilot / local workflow |
 
-## From conversation to parametric geometry
+Rhino and Grasshopper are the primary supported AEC workflow. Revit integration is under development and is not current production support. Broader AI and AEC integrations remain the platform direction, not a claim that every client or host works today.
 
-<p align="center"><img src="assets/archigen-connect-workflow.png" alt="Conceptual workflow from conversation to parametric geometry"></p>
+ComfyUI is an optional local connection for rendering workflows. It depends on a working ComfyUI environment and the selected workflow's models and dependencies; it is not required for Rhino or Grasshopper.
 
-Describe → Understand → Execute → Modify → Verify
+## Four generation modes
 
-For example, describe a rotating tower with editable floor count, floor height, twist, taper, core dimensions, and facade controls. ArchiGen Connect helps turn that intent into a structured workflow, then supports measured changes and verification. The illustration above is conceptual, not a product screenshot.
+| Mode | What it produces |
+| --- | --- |
+| **Auto** (`/auto`) | Selects a suitable Form workflow first, then Creative, then Agent. |
+| **Form** (`/form`) | Uses the supported ArchiGen Building workflow with editable native controls. |
+| **Creative** (`/creative`) | Executes AI-generated procedural geometry inside one AI Creative Form component. |
+| **Agent** (`/agent`) | Creates or edits a visible, native Grasshopper graph using standard components and wires. |
 
-## What you can do
+Explicit mode selection takes precedence over Auto. Choose a reusable building system, one procedural form or a visible editable graph according to the requested result.
 
-- **CREATE** — Generate structured parametric and AEC workflows.
-- **MODIFY** — Change existing definitions and geometry instead of blindly rebuilding.
-- **INSPECT** — Understand graph and geometry state before mutation.
-- **VERIFY** — Solve, inspect, detect errors, and confirm the resulting output.
+## ArchiGen Building
 
-Workflows also support safe bounded cleanup, parameterized evolution, and preserving unrelated user work.
+Create an editable building with width, depth, floor height, floor count, rotation and taper controls. Building produces native outputs for slabs, handrails, mullions and glass, rather than a replacement Agent graph.
 
-## How ArchiGen Connect works
+## AI Creative Form
 
-<p align="center"><img src="assets/archigen-connect-how-it-works.png" alt="How ArchiGen Connect connects a project, AEC software, and AI"></p>
+Creative executes AI-generated C# geometry logic with RhinoCommon inside **one AI Creative Form component**. It exposes editable native controls and separate geometry outputs, supports same-form evolution and retains its controls when saved and reopened.
 
-1. Select your project.
-2. Connect supported AEC software.
-3. Connect your AI.
-4. Start designing.
+Changing an existing parameter recomputes geometry without requesting new AI-generated code. Successful execution requires resulting geometry, not merely stored code or an empty component.
 
-For the current Beta, Rhino and Grasshopper are the primary supported AEC workflow.
+Creative execution is constrained by ArchiGen's runtime validation and execution limits. It is not a claim of a perfect security sandbox. **Python execution is deferred**; this release does not ship separate public C# and Python Creative components.
 
-## Platform vision
+## Native Agent workflows
 
-<p align="center"><img src="assets/archigen-connect-platform.png" alt="Platform vision connecting any AI to AEC software through ArchiGen Connect"></p>
+Agent creates or edits visible native Grasshopper graphs. A rectangle-extrusion workflow, for example, uses width, depth and height sliders, standard components and normal wires. The graph remains editable in Grasshopper.
 
-```text
-ANY AI
-	↓
-ARCHIGEN CONNECT
-	↓
-AEC SOFTWARE
-```
+## Install and connect
 
-ArchiGen Connect is **model-neutral**, **host-neutral**, and **AEC-focused**.
+1. Download the [Beta.20 installer](https://github.com/ArchiGenio/archigen-connect/releases/download/v0.1.0-beta.20/ArchiGenConnectSetup-0.1.0-beta.20.exe).
+2. Run setup and approve the Windows permission prompt.
+3. Sign in to ArchiGen Connect and select your project.
+4. Start Rhino and Grasshopper from ArchiGen Connect and wait for a ready connection.
+5. Connect your supported AI client and begin creating, modifying, inspecting or verifying your work.
 
-**Supported now:** ChatGPT, GitHub Copilot, Rhino, Grasshopper.
+See [INSTALL.md](INSTALL.md), [REQUIREMENTS.md](REQUIREMENTS.md), [TROUBLESHOOTING.md](TROUBLESHOOTING.md) and the [ChatGPT MCP setup guide](CHATGPT_SETUP.md).
 
-**Coming next:** Claude, Gemini, local AI, Revit, AutoCAD, Blender, and more AEC workflows. These are roadmap items, not current production support.
+For updates, save your work and **install the new Beta over the existing installation**. Do not uninstall first. Normal settings and signed-in session state are preserved; sign in again if your session has expired.
 
-## MCP-Powered AEC Connectivity
+## Download and verification
 
-ArchiGen Connect uses the Model Context Protocol (MCP) as part of its connection layer, allowing compatible AI clients to discover and invoke structured AEC actions. ArchiGen adds the product-specific layer around MCP: AEC semantics, project context, safe modification, execution, and verification.
+Version: **0.1.0-beta.20**. Installer: **ArchiGenConnectSetup-0.1.0-beta.20.exe**. This is an **unsigned Public Beta** installer.
 
-This makes ArchiGen Connect an AEC Agent and AI Agent bridge for Rhino MCP, Grasshopper MCP, Parametric Design, and Computational Design workflows.
+- [Download installer](https://github.com/ArchiGenio/archigen-connect/releases/download/v0.1.0-beta.20/ArchiGenConnectSetup-0.1.0-beta.20.exe)
+- [Download SHA256SUMS.txt](https://github.com/ArchiGenio/archigen-connect/releases/download/v0.1.0-beta.20/SHA256SUMS.txt)
+- [Release notes](https://github.com/ArchiGenio/archigen-connect/releases/tag/v0.1.0-beta.20)
+- [Changelog](CHANGELOG.md)
 
-## Example prompts
-
-```text
-Create a Grasshopper circle with an editable radius of 8.
-```
+SHA-256:
 
 ```text
-Create a parametric rotating tower with editable floor count, floor height,
-twist, taper, core dimensions, and facade controls.
+23DE6B101F9C54FB6716DED7DF3EF40F9853F04ABF4E63FB886A501C9C16FEBA
 ```
 
-```text
-Modify the existing definition to increase the tower twist. Preserve the
-existing floor-generation and facade logic.
-```
+## Feedback and next releases
 
-```text
-Inspect the current definition and identify only obsolete components.
-Preserve unrelated user-created work.
-```
+Use [GitHub Issues](https://github.com/ArchiGenio/archigen-connect/issues/new/choose) to report bugs or request features. Include the version and steps to reproduce, but never passwords, tokens, API keys, confidential project files or private company information.
 
-## Installation
-
-Download → Install → Sign In → Select Project → Connect → Design
-
-See [INSTALL.md](INSTALL.md) for the complete setup flow and [REQUIREMENTS.md](REQUIREMENTS.md) for supported prerequisites.
-
-## Connect with ChatGPT
-
-ChatGPT connects to ArchiGen Connect through MCP using the Beta.18 Developer Mode app flow. Follow the complete [ChatGPT MCP setup guide](CHATGPT_SETUP.md) for the bridge command, secure HTTPS tunnel, tool scan, status test, and first Grasshopper execution test.
-
-## Download ArchiGen Connect Beta.18
-
-Download the latest **ArchiGen Connect Public Beta** for Windows.
-
-[**Download ArchiGen Connect 0.1.0-beta.18**](https://github.com/ArchiGenio/archigen-connect/releases/tag/v0.1.0-beta.18)
-
-The installer is distributed through the official GitHub Releases page.
-
-For installation steps, see [INSTALL.md](INSTALL.md).
-
-
-## Roadmap
-
-**Now:** ChatGPT, GitHub Copilot, Rhino, Grasshopper, and create / modify / inspect / verify workflows.
-
-**Coming next:** Claude, Gemini, local / Ollama workflows, Revit, AutoCAD, and Blender.
-
-**Later:** Project Memory, broader multi-software AEC workflows, and cross-software workflows.
-
-No speculative dates are published.
-
-## Public Beta and feedback
-
-This is a public Beta. Start with [installation](INSTALL.md) or [troubleshooting](TROUBLESHOOTING.md), then use [GitHub Issues](https://github.com/ArchiGenio/archigen-connect/issues/new/choose) for bug reports and feature requests.
-
-Do not submit passwords, tokens, API keys, confidential project files, or private company information in GitHub Issues.
+Beta.20 features are frozen. Enhancements belong to Beta.21 or later. The longer-term direction is model-neutral AEC connectivity; Revit and additional AI/host integrations remain under development.

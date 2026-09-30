@@ -1,6 +1,6 @@
 # Connect ArchiGen Connect to ChatGPT
 
-This guide documents the Beta.18 Developer Mode path for connecting ChatGPT to an authenticated local ArchiGen Connect session through MCP.
+This guide documents the Beta.20 Developer Mode path for connecting ChatGPT to a signed-in local ArchiGen Connect session through MCP.
 
 **MCP** means **Model Context Protocol**.
 
@@ -10,23 +10,23 @@ ChatGPT connects to ArchiGen Connect through MCP. ArchiGen Connect provides the 
 
 You need:
 
-- ArchiGen Connect Beta.18 installed on Windows 10/11 x64.
+- ArchiGen Connect Beta.20 installed on Windows 10/11 x64.
 - A signed-in ArchiGen Connect session.
 - Rhino 8 and Grasshopper available on the computer.
-- ChatGPT access to the Developer Mode app-creation flow. The internal Beta.15 integration notes require a supported Business or Enterprise/Edu workspace for full MCP write testing; do not assume a Plus workspace supports private write testing.
+- ChatGPT access to the Developer Mode app-creation flow and required tool permissions. Availability depends on your plan and workspace policies; check ChatGPT's current documentation and do not assume every account supports write actions.
 - A separately installed secure tunnel that can provide an HTTPS URL forwarding to a local HTTP endpoint. ArchiGen Connect does not provide or embed this tunnel.
 
 ## Setup sequence
 
 ### 1. Install ArchiGen Connect
 
-Download and install [ArchiGen Connect Beta.18](https://github.com/ArchiGenio/archigen-connect/releases/tag/v0.1.0-beta.18). See [INSTALL.md](INSTALL.md) for the normal installation flow.
+Download and install [ArchiGen Connect Beta.20](https://github.com/ArchiGenio/archigen-connect/releases/tag/v0.1.0-beta.20). See [INSTALL.md](INSTALL.md) for normal installation and install-over updates.
 
 ### 2. Launch and sign in
 
 Launch ArchiGen Connect and complete its normal sign-in flow. This local ArchiGen authentication must already be active before ChatGPT can use the connected session.
 
-ChatGPT does not receive ArchiGen access tokens, and Beta.18 does not implement an ArchiGen OAuth flow for this connection.
+Use the normal ArchiGen Connect sign-in flow. Do not paste account or session credentials into ChatGPT.
 
 ### 3. Select a project
 
@@ -42,7 +42,7 @@ Open ChatGPT in a workspace that supports the Developer Mode app-creation flow.
 
 ### 6. Enable the required Developer Mode feature
 
-Beta.18 uses ChatGPT's Developer Mode path for adding a development MCP app. The current integration documentation identifies the flow as **ChatGPT Developer Mode** and does not provide a separate ArchiGen toggle or setting.
+Beta.20 uses ChatGPT's Developer Mode path for adding a development MCP app. Client settings may vary by account and workspace; there is no separate ArchiGen Developer Mode toggle.
 
 ### 7. Start the ArchiGen ChatGPT bridge
 
@@ -52,7 +52,7 @@ Open PowerShell and start the packaged bridge:
 & "$env:ProgramFiles\ArchiGen Connect\ArchiGenConnect.exe" --chatgpt-bridge
 ```
 
-This starts the local RemoteBridge and the ChatGPT MCP adapter. The adapter listens locally at:
+The packaged ChatGPT MCP connection listens locally at:
 
 ```text
 http://127.0.0.1:10502/mcp
@@ -68,7 +68,7 @@ Start the separately installed secure tunnel and configure it to forward to:
 http://127.0.0.1:10502/mcp
 ```
 
-Use the tunnel's resulting **HTTPS MCP endpoint**. Do not expose the local bridge endpoint directly and do not use the internal RemoteBridge endpoint.
+Use the tunnel's resulting **HTTPS MCP endpoint**. Expose only this MCP connection over secure HTTPS, not unrelated local services.
 
 In ChatGPT Developer Mode, open:
 
@@ -122,7 +122,7 @@ Confirm that ChatGPT Developer Mode is enabled, that you opened **Settings / App
 
 ### Authorization or sign-in fails
 
-Sign in again through ArchiGen Connect and retry the status test. Beta.18 authenticates the local ArchiGen session; it does not perform ArchiGen OAuth inside ChatGPT. Do not paste passwords, access tokens, or refresh tokens into ChatGPT or GitHub Issues.
+Sign in again through ArchiGen Connect and retry the status test. Do not paste passwords or session credentials into ChatGPT or GitHub Issues.
 
 ### The local desktop is not connected
 
@@ -138,4 +138,4 @@ Confirm that the tunnel is forwarding to `http://127.0.0.1:10502/mcp`, then run 
 
 ## Scope of this guide
 
-This guide covers the proven Beta.18 ChatGPT Developer Mode integration. Claude, Gemini, local/Ollama AI, Revit, AutoCAD, Blender, and other integrations remain roadmap items in the public Beta documentation.
+This guide covers Beta.20 ChatGPT Developer Mode setup. Revit is under development. Claude, Gemini, local/Ollama AI, AutoCAD, Blender and broader integrations remain roadmap items, not current production support.

@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.1.0-beta.20 - Public Beta
+
+- Improved install-over updates and signed-in session continuity.
+- More consistent standalone Rhino 8 and Grasshopper startup and connection readiness.
+- Four generation modes: Auto, Form, Creative and Agent, with explicit mode selection.
+- Editable ArchiGen Building workflows with floor, rotation, taper and facade outputs.
+- AI Creative Form executes generated C# geometry with RhinoCommon inside one component, with editable controls, separate outputs, same-form evolution and save/reopen support. Python remains deferred.
+- Existing Creative parameter changes recompute geometry without new AI-generated code.
+- Native Agent workflows remain visible, editable standard Grasshopper components, sliders and wires.
+- Verified Windows installer and downloadable SHA-256 checksum through GitHub Releases.
+
+Beta.20 features are frozen. Enhancements are reserved for Beta.21 or later. Revit remains under development, not current production support.
+
 ## 0.1.0-beta.18
 
 - Fixed stale Windows shortcuts that could launch an older ArchiGen Connect build after upgrade.
