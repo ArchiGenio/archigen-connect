@@ -4,11 +4,11 @@
 
 <p align="center"><strong>AI Agent Bridge for AEC Workflows</strong></p>
 <p align="center"><strong>Any AI. One AEC Connection Layer.</strong></p>
-<p align="center">0.1.0-beta.20 | Free Public Beta | Windows 10/11 x64</p>
+<p align="center">0.1.0-beta.21 | Free Public Beta | Windows 10/11 x64</p>
 
 <p align="center">
-  <a href="https://github.com/ArchiGenio/archigen-connect/releases/download/v0.1.0-beta.20/ArchiGenConnectSetup-0.1.0-beta.20.exe"><strong>Download Beta.20 for Windows</strong></a>
-  | <a href="https://github.com/ArchiGenio/archigen-connect/releases/tag/v0.1.0-beta.20">Release Notes</a>
+  <a href="https://github.com/ArchiGenio/archigen-connect/releases/download/v0.1.0-beta.21/ArchiGenConnectSetup-0.1.0-beta.21.exe"><strong>Download Beta.21 for Windows</strong></a>
+  | <a href="https://github.com/ArchiGenio/archigen-connect/releases/tag/v0.1.0-beta.21">Release Notes</a>
   | <a href="https://github.com/ArchiGenio/archigen-connect/issues/new/choose">Report Bug / Request Feature</a>
 </p>
 
@@ -18,15 +18,19 @@ ArchiGen Connect connects compatible AI assistants to architecture, engineering 
 
 This is the public product, documentation and download repository. Product source is not published here. Installers are distributed as GitHub Release assets, not files in this repository.
 
-## Supported in Beta.20
+## Supported in Beta.21
 
-| Platform | AEC workflow | AI clients |
-| --- | --- | --- |
-| Windows 10/11 x64 | Rhino 8 and Grasshopper | ChatGPT and GitHub Copilot / local workflow |
+AI clients: **ChatGPT, GitHub Copilot, Codex, Claude and Ollama**. Claude Desktop supports MCP connectivity; Ollama supports local AI workflows with compatible installed models.
 
-Rhino and Grasshopper are the primary supported AEC workflow. Revit integration is under development and is not current production support. Broader AI and AEC integrations remain the platform direction, not a claim that every client or host works today.
+| Software target | Beta workflow |
+| --- | --- |
+| Rhino 8 + Grasshopper | Parametric modeling, editable forms and native graphs |
+| ComfyUI | Local creative workflow control and execution |
+| Autodesk Revit 2025 | BIM workflow connectivity through MCP |
 
-ComfyUI is an optional local connection for rendering workflows. It depends on a working ComfyUI environment and the selected workflow's models and dependencies; it is not required for Rhino or Grasshopper.
+Select your project, AI client and software target in ArchiGen Connect. Readiness is reported for the selected target; you do not need to run every supported application.
+
+Each client and target requires its own working environment, access and dependencies. ComfyUI requires the selected workflow's models and dependencies. Revit requires a working Revit 2025 installation. Neither is required for Rhino + Grasshopper. These integrations are beta capabilities, not a claim of production stability or universal model compatibility.
 
 ## Four generation modes
 
@@ -57,10 +61,10 @@ Agent creates or edits visible native Grasshopper graphs. A rectangle-extrusion 
 
 ## Install and connect
 
-1. Download the [Beta.20 installer](https://github.com/ArchiGenio/archigen-connect/releases/download/v0.1.0-beta.20/ArchiGenConnectSetup-0.1.0-beta.20.exe).
+1. Download the [Beta.21 installer](https://github.com/ArchiGenio/archigen-connect/releases/download/v0.1.0-beta.21/ArchiGenConnectSetup-0.1.0-beta.21.exe).
 2. Run setup and approve the Windows permission prompt.
 3. Sign in to ArchiGen Connect and select your project.
-4. Start Rhino and Grasshopper from ArchiGen Connect and wait for a ready connection.
+4. Select and connect your software target; wait for a ready connection.
 5. Connect your supported AI client and begin creating, modifying, inspecting or verifying your work.
 
 See [INSTALL.md](INSTALL.md), [REQUIREMENTS.md](REQUIREMENTS.md), [TROUBLESHOOTING.md](TROUBLESHOOTING.md) and the [ChatGPT MCP setup guide](CHATGPT_SETUP.md).
@@ -69,21 +73,21 @@ For updates, save your work and **install the new Beta over the existing install
 
 ## Download and verification
 
-Version: **0.1.0-beta.20**. Installer: **ArchiGenConnectSetup-0.1.0-beta.20.exe**. This is an **unsigned Public Beta** installer.
+Version: **0.1.0-beta.21**. Installer: **ArchiGenConnectSetup-0.1.0-beta.21.exe**. Size: **117598158 bytes**. This is an **unsigned Public Beta** installer.
 
-- [Download installer](https://github.com/ArchiGenio/archigen-connect/releases/download/v0.1.0-beta.20/ArchiGenConnectSetup-0.1.0-beta.20.exe)
-- [Download SHA256SUMS.txt](https://github.com/ArchiGenio/archigen-connect/releases/download/v0.1.0-beta.20/SHA256SUMS.txt)
-- [Release notes](https://github.com/ArchiGenio/archigen-connect/releases/tag/v0.1.0-beta.20)
+- [Download installer](https://github.com/ArchiGenio/archigen-connect/releases/download/v0.1.0-beta.21/ArchiGenConnectSetup-0.1.0-beta.21.exe)
+- [Download SHA256SUMS.txt](https://github.com/ArchiGenio/archigen-connect/releases/download/v0.1.0-beta.21/SHA256SUMS.txt)
+- [Release notes](https://github.com/ArchiGenio/archigen-connect/releases/tag/v0.1.0-beta.21)
 - [Changelog](CHANGELOG.md)
 
 SHA-256:
 
 ```text
-23DE6B101F9C54FB6716DED7DF3EF40F9853F04ABF4E63FB886A501C9C16FEBA
+4D129CA1503E1A57BF36DD4B3037D19D45A6CB1022CBCA548BAA3F81013C1809
 ```
 
 ## Feedback and next releases
 
 Use [GitHub Issues](https://github.com/ArchiGenio/archigen-connect/issues/new/choose) to report bugs or request features. Include the version and steps to reproduce, but never passwords, tokens, API keys, confidential project files or private company information.
 
-Beta.20 features are frozen. Enhancements belong to Beta.21 or later. The longer-term direction is model-neutral AEC connectivity; Revit and additional AI/host integrations remain under development.
+Beta.21 features are frozen. Post-release changes are bug fixes only; new features belong to Beta.22 or later.

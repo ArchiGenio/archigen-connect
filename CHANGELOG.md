@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.1.0-beta.21 - Public Beta
+
+- Added Codex client activation, Claude Desktop MCP connectivity and Ollama local AI integration.
+- Added ComfyUI MCP workflow integration and Revit 2025 MCP integration.
+- Unified AI-client to ArchiGen to software-target routing, with readiness and context reporting for the selected target.
+- Improved launch, attach and repair flows across supported connections.
+- Fixed Grasshopper/Form compatibility while retaining editable native Building controls and geometry outputs.
+- Fixed installed desktop startup so packaged runtime connections resolve correctly after installation.
+- Preserved signed-in sessions during install-over updates; improved installer and desktop launch stability.
+
+This is a beta/pre-release, not a claim of production stability. Beta.21 features are frozen; post-release changes are bug fixes only. New features belong to Beta.22 or later.
+
 ## 0.1.0-beta.20 - Public Beta
 
 - Improved install-over updates and signed-in session continuity.
