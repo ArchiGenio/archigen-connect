@@ -10,7 +10,7 @@ Download [SHA256SUMS.txt](https://github.com/ArchiGenio/archigen-connect/release
 Get-FileHash "$env:USERPROFILE\Downloads\ArchiGenConnectSetup-0.1.0-beta.21.exe" -Algorithm SHA256
 ```
 
-Expected SHA-256: `4D129CA1503E1A57BF36DD4B3037D19D45A6CB1022CBCA548BAA3F81013C1809`. Expected size: **117598158 bytes**.
+Expected SHA-256: `4090732D5D0E522BB523D2FE359EE17AF8E3A3ACA09E880394C343A6434C4F9E`. Expected size: **117608392 bytes**.
 
 ## 2. Install
 

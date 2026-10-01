@@ -59,7 +59,7 @@ The Grasshopper side includes four explicit generation modes. Use the mode prefi
 
 ### `/form` — ArchiGen Building
 
-The current Building system exposes **19 semantic controls** for shape, size, levels, rotation, taper, slab/detail settings and facade spacing, with native outputs for:
+The current **ArchiGen Building** system exposes **22 inputs**, including **X/Y/Z positioning**, plus shape, size, levels, rotation, taper, slab/detail settings and facade spacing, with native outputs for:
 
 - Floor Slab
 - Handrail
@@ -114,7 +114,7 @@ For updates, save your work and **install the new Beta over the existing install
 
 Version: **0.1.0-beta.21**  
 Installer: **ArchiGenConnectSetup-0.1.0-beta.21.exe**  
-Size: **117598158 bytes**  
+Size: **117608392 bytes**<br>
 Installer status: **unsigned Public Beta**
 
 - [Download installer](https://github.com/ArchiGenio/archigen-connect/releases/download/v0.1.0-beta.21/ArchiGenConnectSetup-0.1.0-beta.21.exe)
@@ -125,7 +125,7 @@ Installer status: **unsigned Public Beta**
 SHA-256:
 
 ```text
-4D129CA1503E1A57BF36DD4B3037D19D45A6CB1022CBCA548BAA3F81013C1809
+4090732D5D0E522BB523D2FE359EE17AF8E3A3ACA09E880394C343A6434C4F9E
 ```
 
 ## Beta notes

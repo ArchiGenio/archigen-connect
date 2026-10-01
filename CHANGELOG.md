@@ -6,7 +6,9 @@
 - Added ComfyUI MCP workflow integration and Revit 2025 MCP integration.
 - Unified AI-client to ArchiGen to software-target routing, with readiness and context reporting for the selected target.
 - Improved launch, attach and repair flows across supported connections.
-- Fixed Grasshopper/Form compatibility while retaining editable native Building controls and geometry outputs.
+- Restored the latest ArchiGen Building with 22 inputs, including X/Y/Z positioning controls, and an improved editable component layout.
+- Corrected Grasshopper icon sizing to 24x24 while retaining native Building geometry outputs.
+- Retained all four generation modes: `/auto`, `/form`, `/creative` and `/agent`.
 - Fixed installed desktop startup so packaged runtime connections resolve correctly after installation.
 - Preserved signed-in sessions during install-over updates; improved installer and desktop launch stability.
 
