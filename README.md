@@ -12,68 +12,110 @@
   | <a href="https://github.com/ArchiGenio/archigen-connect/issues/new/choose">Report Bug / Request Feature</a>
 </p>
 
-<p align="center"><img src="assets/archigen-connect-hero.png" alt="Conceptual illustration of ArchiGen Connect linking AI with AEC workflows"></p>
+<p align="center"><img src="assets/archigen-connect-hero.png" alt="ArchiGen Connect linking AI clients with AEC software"></p>
 
-ArchiGen Connect connects compatible AI assistants to architecture, engineering and computational-design workflows. It is a connection and execution layer, not another foundation model: create, modify, inspect and verify geometry in the design tools you use.
+ArchiGen Connect is a local connection and execution layer for AI-assisted architecture, engineering and computational-design workflows. It lets compatible AI clients work through one shared ArchiGen layer instead of requiring separate software-specific integrations for every assistant.
 
-This is the public product, documentation and download repository. Product source is not published here. Installers are distributed as GitHub Release assets, not files in this repository.
+This repository is the public product, documentation and download home for ArchiGen Connect. Product source is not published here. Installers are distributed through GitHub Releases.
 
-## Supported in Beta.21
+## What changed in Beta.21
 
-AI clients: **ChatGPT, GitHub Copilot, Codex, Claude and Ollama**. Claude Desktop supports MCP connectivity; Ollama supports local AI workflows with compatible installed models.
+Beta.21 expands ArchiGen Connect from a Rhino + Grasshopper bridge into a broader **multi-AI, multi-software AEC connection layer**.
 
-| Software target | Beta workflow |
+### AI clients
+
+- **ChatGPT** — general AI assistant workflows
+- **GitHub Copilot** — coding and agent workflows from VS Code
+- **Codex** — OpenAI coding/agent workflows
+- **Claude** — MCP-native desktop workflows
+- **Ollama** — local AI inference with compatible installed models
+
+### Software targets
+
+| Software target | Beta.21 capability |
 | --- | --- |
-| Rhino 8 + Grasshopper | Parametric modeling, editable forms and native graphs |
-| ComfyUI | Local creative workflow control and execution |
-| Autodesk Revit 2025 | BIM workflow connectivity through MCP |
+| **Rhino 8 + Grasshopper** | Parametric modeling, native editable graphs, reusable forms and AI-generated procedural geometry |
+| **ComfyUI** | Local node-workflow discovery, validation, editing, execution and output retrieval through MCP |
+| **Autodesk Revit 2025** | BIM inspection and controlled model operations through the Revit MCP connection |
 
-Select your project, AI client and software target in ArchiGen Connect. Readiness is reported for the selected target; you do not need to run every supported application.
+<p align="center"><img src="assets/archigen-connect-platform.png" alt="ArchiGen Connect platform overview"></p>
 
-Each client and target requires its own working environment, access and dependencies. ComfyUI requires the selected workflow's models and dependencies. Revit requires a working Revit 2025 installation. Neither is required for Rhino + Grasshopper. These integrations are beta capabilities, not a claim of production stability or universal model compatibility.
+The product model is simple:
 
-## Four generation modes
+**AI Client → ArchiGen Connect → Selected Software Target**
 
-| Mode | What it produces |
-| --- | --- |
-| **Auto** (`/auto`) | Selects a suitable Form workflow first, then Creative, then Agent. |
-| **Form** (`/form`) | Uses the supported ArchiGen Building workflow with editable native controls. |
-| **Creative** (`/creative`) | Executes AI-generated procedural geometry inside one AI Creative Form component. |
-| **Agent** (`/agent`) | Creates or edits a visible, native Grasshopper graph using standard components and wires. |
+Your project, selected AI client and selected software target remain separate, so you can change one without rebuilding the others.
 
-Explicit mode selection takes precedence over Auto. Choose a reusable building system, one procedural form or a visible editable graph according to the requested result.
+## ArchiGen Genie — generation modes
 
-## ArchiGen Building
+The Grasshopper side includes four explicit generation modes. Use the mode prefix when you want deterministic routing, or let Auto decide.
 
-Create an editable building with width, depth, floor height, floor count, rotation and taper controls. Building produces native outputs for slabs, handrails, mullions and glass, rather than a replacement Agent graph.
+| Genie mode | Command | Best for |
+| --- | --- | --- |
+| **Auto** | `/auto` | Automatically chooses Form → Creative → Agent according to the request |
+| **Form** | `/form` | Reusable ArchiGen parametric systems with exposed native controls |
+| **Creative** | `/creative` | One AI-generated procedural geometry program inside an AI Creative Form component |
+| **Agent** | `/agent` | Visible native Grasshopper definitions made from standard components, sliders and wires |
 
-## AI Creative Form
+### `/form` — ArchiGen Building
 
-Creative executes AI-generated C# geometry logic with RhinoCommon inside **one AI Creative Form component**. It exposes editable native controls and separate geometry outputs, supports same-form evolution and retains its controls when saved and reopened.
+The current Building system exposes **19 semantic controls** for shape, size, levels, rotation, taper, slab/detail settings and facade spacing, with native outputs for:
 
-Changing an existing parameter recomputes geometry without requesting new AI-generated code. Successful execution requires resulting geometry, not merely stored code or an empty component.
+- Floor Slab
+- Handrail
+- Mullions
+- Glass
 
-Creative execution is constrained by ArchiGen's runtime validation and execution limits. It is not a claim of a perfect security sandbox. **Python execution is deferred**; this release does not ship separate public C# and Python Creative components.
+The result stays editable and recomputes normally when its parameters change.
 
-## Native Agent workflows
+### `/creative` — AI Creative Form
 
-Agent creates or edits visible native Grasshopper graphs. A rectangle-extrusion workflow, for example, uses width, depth and height sliders, standard components and normal wires. The graph remains editable in Grasshopper.
+Creative executes AI-generated C# / RhinoCommon geometry logic inside **one AI Creative Form component**. It can expose dynamic native inputs and outputs, evolve the same form when the algorithm changes, and recompute parameter edits without regenerating code.
+
+Python execution is deferred in this release.
+
+### `/agent` — native Grasshopper graph
+
+Agent creates or edits visible Grasshopper definitions using standard components and wires. The generated graph remains directly editable by the user.
+
+### `/auto` — intelligent routing
+
+Auto selects the lightest suitable generation strategy instead of forcing every task into one representation.
+
+<p align="center"><img src="assets/archigen-connect-workflow.png" alt="ArchiGen Connect workflow"></p>
+
+## Why ArchiGen Connect
+
+ArchiGen Connect is designed around a shared AEC intelligence layer rather than a collection of one-off AI integrations.
+
+- **One connection layer** for multiple AI clients
+- **MCP-first software connectivity** where strong software MCPs already exist
+- **Parametric-design intelligence** before execution, not only tool calling
+- **Editable results** in Grasshopper instead of black-box geometry where possible
+- **Local AI option** through Ollama
+- **Project-aware routing** across supported clients and software targets
+- **Repair and readiness tools** for supported connections
 
 ## Install and connect
 
 1. Download the [Beta.21 installer](https://github.com/ArchiGenio/archigen-connect/releases/download/v0.1.0-beta.21/ArchiGenConnectSetup-0.1.0-beta.21.exe).
 2. Run setup and approve the Windows permission prompt.
 3. Sign in to ArchiGen Connect and select your project.
-4. Select and connect your software target; wait for a ready connection.
-5. Connect your supported AI client and begin creating, modifying, inspecting or verifying your work.
+4. Choose an AI client.
+5. Choose the software target you want to work with.
+6. Wait for the selected target to report **READY**.
+7. Work naturally from the connected AI client.
 
 See [INSTALL.md](INSTALL.md), [REQUIREMENTS.md](REQUIREMENTS.md), [TROUBLESHOOTING.md](TROUBLESHOOTING.md) and the [ChatGPT MCP setup guide](CHATGPT_SETUP.md).
 
-For updates, save your work and **install the new Beta over the existing installation**. Do not uninstall first. Normal settings and signed-in session state are preserved; sign in again if your session has expired.
+For updates, save your work and **install the new Beta over the existing installation**. Do not uninstall first. Normal settings and signed-in session state are preserved; sign in again only if the session itself has expired.
 
 ## Download and verification
 
-Version: **0.1.0-beta.21**. Installer: **ArchiGenConnectSetup-0.1.0-beta.21.exe**. Size: **117598158 bytes**. This is an **unsigned Public Beta** installer.
+Version: **0.1.0-beta.21**  
+Installer: **ArchiGenConnectSetup-0.1.0-beta.21.exe**  
+Size: **117598158 bytes**  
+Installer status: **unsigned Public Beta**
 
 - [Download installer](https://github.com/ArchiGenio/archigen-connect/releases/download/v0.1.0-beta.21/ArchiGenConnectSetup-0.1.0-beta.21.exe)
 - [Download SHA256SUMS.txt](https://github.com/ArchiGenio/archigen-connect/releases/download/v0.1.0-beta.21/SHA256SUMS.txt)
@@ -86,8 +128,18 @@ SHA-256:
 4D129CA1503E1A57BF36DD4B3037D19D45A6CB1022CBCA548BAA3F81013C1809
 ```
 
-## Feedback and next releases
+## Beta notes
 
-Use [GitHub Issues](https://github.com/ArchiGenio/archigen-connect/issues/new/choose) to report bugs or request features. Include the version and steps to reproduce, but never passwords, tokens, API keys, confidential project files or private company information.
+ArchiGen Connect is still a public beta. Client availability, model quality, software versions and third-party MCP behavior may affect individual workflows.
+
+- Claude usage depends on the user's Claude account availability and limits.
+- Ollama tool use depends on the capabilities of the selected local model.
+- ComfyUI workflows require their referenced local models/custom nodes.
+- Revit support in Beta.21 is validated against Revit 2025 through the current compatibility provider.
+- Project Memory/private Skills may require additional configured services.
+
+## Feedback
+
+Use [GitHub Issues](https://github.com/ArchiGenio/archigen-connect/issues/new/choose) to report bugs or request features. Include the ArchiGen Connect version and clear reproduction steps, but never share passwords, tokens, API keys, confidential project files or private company information.
 
 Beta.21 features are frozen. Post-release changes are bug fixes only; new features belong to Beta.22 or later.
